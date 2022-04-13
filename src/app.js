@@ -4,7 +4,6 @@ const hbs=require('hbs')
 const geocode =require('./utils/geocode')
 const forecast=require('./utils/forecast')
 
-
 const app = express()
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath= path.join(__dirname,'../templates/views')
@@ -18,7 +17,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('',(req,res)=>{
     res.render('index',{
-        title:'Weather App',
+        title:'Weather Application',
         name:'Rahul R Gaykar'
     })
 })
@@ -26,7 +25,8 @@ app.get('',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:'About Page',
-        name:'Test Test'
+        name:'Test Test',
+        content:'Test'
     })
 })
 
