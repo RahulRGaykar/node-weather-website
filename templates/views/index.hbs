@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Index page</title>
+        <link rel="icon" href="../../public/img/weather.png">
+        <link rel="Stylesheet" href="../../public/css/style.css">
+    </head>
+    <body>
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+        <br><br>
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <br>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+        <br><br>
+        <p>
+            {{>footer}}
+        </p>
+        <script src="../../public/js/app.js"></script>
+    </body>
+</html>
